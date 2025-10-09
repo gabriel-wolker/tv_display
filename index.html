@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Imagem para TV</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: black;
+    }
+    /* full-screen image que mantém proporção e preenche a tela */
+    .bg {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* cover = preenche e corta se necessário */
+      object-position: center center;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg">
+    <img src="https://a.imagem.app/BELz5N.png" alt="Tela TV">
+  </div>
+</body>
+</html>
